@@ -14,6 +14,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-cucumber'
+Bundle 'scrooloose/syntastic'
+Bundle 'pangloss/vim-javascript'
 " Bundles from vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
