@@ -16,6 +16,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-cucumber'
 Bundle 'scrooloose/syntastic'
 Bundle 'pangloss/vim-javascript'
+Bundle 'vim-scripts/Tail-Bundle'
 " Bundles from vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -28,7 +29,13 @@ filetype plugin indent on
 
 " Colorscheme
 syntax enable
-set background=dark
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+set t_Co=16
+let g:solarized_termcolors=16
 colorscheme solarized
 " Statusline
 set laststatus=2
@@ -38,3 +45,9 @@ let g:Powerline_symbols = 'fancy'
 set expandtab
 set tabstop=2
 set shiftwidth=2
+" Programming area
+set textwidth=90
+set colorcolumn=+1
+highlight ColorColumn ctermbg=magenta guibg=magenta
+" File handling
+set autowriteall
