@@ -46,6 +46,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 " Programming area
+set number
 set textwidth=90
 set colorcolumn=+1
 highlight ColorColumn ctermbg=magenta guibg=magenta
